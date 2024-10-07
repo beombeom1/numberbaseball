@@ -2,21 +2,28 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Main {
+public class test2 {
     public static void main(String[] args) {
         Random random = new Random();
-        int randomNumber = 000 + random.nextInt(900);
+        int a = random.nextInt(9) + 1;
+        int b = random.nextInt(9) + 1;
+        while (b == a) {
+            b = random.nextInt(9) + 1;
+        }
+        int c = random.nextInt(9) + 1;
+        while (c == a || c == b) {
+            c = random.nextInt(9) + 1;
+        }
         int strike = 0;
         int ball = 0;
-        int a, b, c, x, y, z;
-        a = randomNumber / 100;
-        b = (randomNumber / 10) % 10;
-        c = randomNumber % 10;
+        int x, y, z;
+
         ArrayList<Integer> numbers = new ArrayList<>();
         numbers.add(a);
         numbers.add(b);
         numbers.add(c);
         System.out.println("숫자 야구 3자리");
+        int randomNumber = 100 * a + 10 * b + c;
         System.out.println(randomNumber);
         while (true){
             Scanner sc = new Scanner(System.in);
