@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class test2 {
     public static void main(String[] args) {
         Random random = new Random();
-        int a = random.nextInt(9) + 1;
-        int b = random.nextInt(9) + 1;
+        int a = random.nextInt(10) + 1;
+        int b = random.nextInt(10) + 1;
         while (b == a) {
-            b = random.nextInt(9) + 1;
+            b = random.nextInt(10) + 1;
         }
-        int c = random.nextInt(9) + 1;
+        int c = random.nextInt(10) + 1;
         while (c == a || c == b) {
-            c = random.nextInt(9) + 1;
+            c = random.nextInt(10) + 1;
         }
         int strike = 0;
         int ball = 0;
@@ -24,7 +24,7 @@ public class test2 {
         numbers.add(c);
         System.out.println("숫자 야구 3자리");
         int randomNumber = 100 * a + 10 * b + c;
-        //System.out.println(randomNumber);
+        System.out.println(randomNumber);
         while (true){
             Scanner sc = new Scanner(System.in);
             int s = sc.nextInt();
