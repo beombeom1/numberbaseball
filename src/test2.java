@@ -24,14 +24,14 @@ public class test2 {
         numbers.add(c);
         System.out.println("숫자 야구 3자리");
         int randomNumber = 100 * a + 10 * b + c;
-        System.out.println(randomNumber);
+        //System.out.println(randomNumber);
         while (true){
             Scanner sc = new Scanner(System.in);
             int s = sc.nextInt();
             x = s / 100;
             y = (s / 10) % 10;
             z = s % 10;
-            if(s<100){
+            if(s < 100 || s > 1000){
                 System.out.println("3자리 숫자를 입력해주세요");
                 continue;
             }
