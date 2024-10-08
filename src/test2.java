@@ -45,17 +45,17 @@ public class test2 {
             numbers2.add(z);
             if(a==x && numbers.indexOf(a) == numbers2.indexOf(x)){
                 strike++;
-            } else if(numbers.contains(x) && numbers.indexOf(a) == numbers2.indexOf(x)){
+            } else if(numbers.contains(x)){
                 ball++;
             }
             if(b==y && numbers.indexOf(b) == numbers2.indexOf(y)){
                 strike++;
-            } else if (numbers.contains(y) && numbers.indexOf(b) == numbers2.indexOf(y)){
+            } else if (numbers.contains(y)){
                 ball++;
             }
             if(c==z && numbers.indexOf(c) == numbers2.indexOf(z)){
                 strike++;
-            } else if (numbers.contains(z) && numbers.indexOf(c) == numbers2.indexOf(z)){
+            } else if (numbers.contains(z)){
                 ball++;
             }
             if(strike == 0 && ball == 0){
