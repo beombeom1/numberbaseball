@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class test2 {
     public static void main(String[] args) {
         Random random = new Random();
-        int a = random.nextInt(10) + 1;
-        int b = random.nextInt(10) + 1;
+        int a = random.nextInt(10);
+        int b = random.nextInt(10);
         while (b == a) {
-            b = random.nextInt(10) + 1;
+            b = random.nextInt(10);
         }
-        int c = random.nextInt(10) + 1;
+        int c = random.nextInt(10);
         while (c == a || c == b) {
-            c = random.nextInt(10) + 1;
+            c = random.nextInt(10);
         }
         int strike = 0;
         int ball = 0;
